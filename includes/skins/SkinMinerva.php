@@ -1228,7 +1228,7 @@ class SkinMinerva extends SkinTemplate {
 		$switcherHtml = <<<HTML
 <h2>{$this->getSitename( true )}</h2>
 <ul>
-	<li>{$mobile}</li><li><a id="mw-mf-display-toggle" href="{$url}">{$desktop}</a></li>
+	<li>{$mobile}</li><li><a id="mw-mf-display-toggle" rel="noindex,nofollow" href="{$url}">{$desktop}</a></li>
 </ul>
 HTML;
 

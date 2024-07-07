@@ -168,7 +168,7 @@ class MobileFrontendHooks {
 			$mobileViewUrl = MobileContext::singleton()->getMobileUrl( $mobileViewUrl );
 
 			$link = Html::element( 'a',
-				array( 'href' => $mobileViewUrl, 'class' => 'noprint stopMobileRedirectToggle' ),
+				array( 'rel' => 'noindex,nofollow', 'href' => $mobileViewUrl, 'class' => 'noprint stopMobileRedirectToggle' ),
 				wfMessage( 'mobile-frontend-view' )->text()
 			);
 			$tpl->set( 'mobileview', $link );
